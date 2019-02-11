@@ -1,0 +1,23 @@
+body{
+	background-color: lightgrey;
+}
+
+#block1 {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	position: relative;
+	animation: motion 5s infinite;
+	animation-duration: 4s;
+	animation-timing-function: 2;
+	animation-direction: alternate;
+}
+
+@keyframes motion
+{
+	 0%   {background-color:red; left:0px; top:0px; height: 100px;}
+  25%  {background-color:yellow; left:250px; top:0px; width: 150px;}
+  50%  {background-color:blue; left:200px; top:250px; height: 300;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:black; left:0px; top:0px;}
+}
